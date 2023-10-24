@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react';
 import { Avatar, Box, Typography } from '@mui/material';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 interface IProfile {
     name: string;
@@ -29,4 +29,9 @@ export const Profile: FC<IProfile> = (props): ReactElement => {
             <Typography variant='body1' color='text.primary'>This is your personal tasks manager</Typography>
         </Box>
     )
+}
+
+Profile.propTypes = {
+    name: PropTypes.string,
+
 }
