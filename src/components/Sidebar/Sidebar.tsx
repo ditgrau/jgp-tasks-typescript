@@ -14,7 +14,7 @@ export const Sidebar: FC = (): ReactElement => {
                 alignItems: 'center',
                 width: '100%'
             }}>
-            <Profile></Profile>
+            <Profile name='Cande'></Profile>
         </Grid>
     )
 }
